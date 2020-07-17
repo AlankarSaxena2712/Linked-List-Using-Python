@@ -6,6 +6,7 @@ class Node:
         self.next = None
 
 
+
 # Create a Linked List
 class LinkedList:
     # Function to initilaize the head of linked list
@@ -94,6 +95,7 @@ class LinkedList:
             NewNode = Node(data)
             NewNode.next = temp.next
             temp.next = NewNode
+
 
 
 # Main method
