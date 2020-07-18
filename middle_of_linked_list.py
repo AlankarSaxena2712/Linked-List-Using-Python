@@ -28,8 +28,17 @@ class LinkedList:
             return
         else:
             while temp is not None and temp.next is not None:
-                prev = prev.next
-                temp = temp.next.next
+                # Both cases work same for odd number of nodes
+                
+                # If you want the middle as (n/2)th node, in case of even nodes
+                if temp.next.next is None:
+                    break
+                else:
+                    prev = prev.next
+                    temp = temp.next.next
+                # If you want the middle as ((n/2) + 1)th node, in case of even nodes
+                # prev = prev.next
+                # temp = temp.next.next
         
         print(prev.data)
     
